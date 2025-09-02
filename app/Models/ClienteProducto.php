@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class ClienteProducto extends Model
 {
     protected $table = 'productos_cliente';
+    protected $fillable = ['idCliente', 'idProducto'];
 
 
     public function cliente(): BelongsTo

@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Cliente extends Model
 {
     protected $table = 'clients';
+    protected $fillable = ['Nombre'];
 
     public function producto(): HasMany
     {

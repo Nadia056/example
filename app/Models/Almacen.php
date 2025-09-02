@@ -9,6 +9,12 @@ class Almacen extends Model
     //
     protected $table = 'almacenes';
 
+    protected $fillable = ['nombre'];
 
+    public function productos()
+    {
+        return $this->hasMany(AlmacenProducto::class, 'idAlmacen');
+    }
     
+
 }
